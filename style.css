@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: space-around;
     height: 80px;
+    background-color: white;
 }
 
 .header {
@@ -227,10 +228,12 @@ a:hover:after {
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .product-container:hover {
     transform: scale(1.03);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 18px;
 }
+
 .product-container {
     animation: fadeIn 0.6s ease-in-out;
 }
@@ -240,6 +243,7 @@ a:hover:after {
         opacity: 0;
         transform: scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -336,6 +340,167 @@ a:hover:after {
     color: black;
 }
 
+.main-watch-container {
+    margin-top: 30px !important;
+
+}
+
+.watch-offer {
+    margin-left: 20px;
+}
+
+.watch-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.watch-list img {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.watch-list img:hover {
+    transform: scale(1.05);
+}
+
+.web-details {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0% 5%;
+    margin-top: 10%;
+    gap: 30px;
+    font-size: 15px;
+}
+
+.world-wide-ship {
+    font-size: 15px;
+    text-align: center;
+}
+
+.best-quality {
+    text-align: center;
+}
+
+.secure-payment {
+    text-align: center;
+}
+
+.best-offer {
+    text-align: center;
+}
+
+.customer-review-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-one {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 600px;
+    height: 250px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.container-two {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 600px;
+    height: 250px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 100px;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.quick-links>a {
+    text-decoration: none;
+}
+
+.input-details>input {
+    display: grid;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 3% 3%;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+.input-two {
+    display: grid;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 3% 3%;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+.otp-btn {
+    display: grid;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+.otp-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.second-footer{
+    background-color: #27323f;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.personal-details{
+    background-color:#27323f ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media{
+    display: flex;
+    gap: 25px;
+    font-size: 30px;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-github {
+  color: #000000;
+}
+
+.fa-instagram {
+  color: #f14843;
+}
+
+.fa-linkedin-in {
+  color: #3b5998;
+}
 
 
 @media (max-width:400px) {
@@ -377,7 +542,6 @@ a:hover:after {
         transform: translateX(-100%);
     }
 }
-
 
 @media screen and (max-width: 600px) {
     .mainHeader {
