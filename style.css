@@ -84,19 +84,33 @@ a:hover:after {
 
 .iconNav {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 5px;
+    gap: 35px;
     font-size: 20px;
 }
 
-.iconNav>i {
-    padding-left: 30px;
+.login-btn {
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+    border: 2px solid;
+    cursor: pointer;
 }
 
-.iconNav>p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    padding-top: 20px;
+.login-btn>p {
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+
+.add-cart-icon {
+    display: flex;
+    align-items: center;
+}
+
+.add-cart-icon>p {
+    margin-bottom: 1px;
+    margin-left: 2px;
 }
 
 .seconnd-Nav {
@@ -170,14 +184,12 @@ a:hover:after {
     vertical-align: middle;
 }
 
-/* normal carousel NON HOVER styles */
 
 .carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 450px;
-    margin-top: -6%;
+    height: 350px;
 }
 
 .carousel-content {
@@ -423,113 +435,111 @@ a:hover:after {
     flex-direction: column;
     margin-left: 15%;
     gap: 10px;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 17px;
+    margin-top: 30px;
+    color: black;
 }
 
 .quick-links>a {
     text-decoration: none;
+    color: black;
 }
 
 .input-details>input {
     display: grid;
     width: 300px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 20px;
     padding: 3% 3%;
     border-radius: 30px;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
-.input-two {
+.input-two>input {
     display: grid;
     width: 300px;
     margin-bottom: 10px;
     padding: 3% 3%;
     border-radius: 30px;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 .otp-btn {
     display: grid;
     padding: 10px 20px;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 15px;
     border-radius: 30px;
-    border: 3px solid black;
+    border: 1px solid black;
 }
-.otp-btn:hover{
+
+.otp-btn:hover {
     background-color: black;
     color: white;
 }
 
-.second-footer{
-    background-color: #27323f;
-    height: 150px;
-    color: white;
+.second-footer {
+    background-color: aliceblue;
+    height: 200px;
+    color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.personal-details{
-    background-color:#27323f ;
+
+.copyRights {
+    margin-bottom: -20px;
+}
+
+.personal-details {
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.social-media{
+
+.brand-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold
+}
+
+.social-media {
     display: flex;
     gap: 25px;
-    font-size: 30px;
+    font-size: 40px;
 }
+
+.watch-list a {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.watch-list a:hover {
+    transform: scale(1.05);
+}
+
 .fa-facebook {
-  color: #3b5998;
+    color: #3b5998;
 }
+
 .fa-twitter {
-  color: #00acee;
+    color: #00acee;
 }
 
 .fa-github {
-  color: #000000;
+    color: #000000;
 }
 
 .fa-instagram {
-  color: #f14843;
+    color: #f14843;
 }
 
 .fa-linkedin-in {
-  color: #3b5998;
-}
-
-
-@media (max-width:400px) {
-    .card {
-        width: 90%
-    }
-
-    .title {
-        font-size: 16px
-    }
-
-    .img {
-        height: 180px
-    }
-
-    .bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px
-    }
-
-    .price {
-        margin-bottom: 5px
-    }
-
-    .btn {
-        width: 100%;
-        justify-content: center
-    }
+    color: #3b5998;
 }
 
 
@@ -543,26 +553,29 @@ a:hover:after {
     }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .mainHeader {
         flex-direction: column;
-        height: auto;
-        padding: 10px;
+        height: 80px;
+    }
+    .mainNav{
+        display: flex;
+        font-size: 10px;
     }
 
-    .mainNav {
-        display: none;
+    .nav-item>li {
+        font-size: 10px;
+        display: flex;
     }
 
     .iconNav {
-        font-size: 16px;
+        font-size: 10px;
         gap: 10px;
     }
 
     .seconnd-Nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
     }
 
     .img-Container {
@@ -582,61 +595,69 @@ a:hover:after {
         margin: 5px 0;
     }
 
+
     .carousel-content {
         margin: 70px 0 30px;
     }
-}
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .mainHeader {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .mainProductContainer {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .mainNav {
-        width: 100%;
+    .product-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .web-details {
+        flex-direction: column;
+        gap: 20px;
         text-align: center;
     }
 
-    .seconnd-Nav {
-        flex-wrap: wrap;
+    .second-footer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .social-media {
+        font-size: 30px;
         gap: 15px;
     }
+} */
 
-    .img-Container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .img-1,
-    .img-2,
-    .img-3,
-    .img-4,
-    .img-5,
-    .img-6,
-    .img-7,
-    .img-8 {
-        width: 30%;
-        margin: 10px;
-    }
-
-    .carousel-content {
-        margin: 70px 0 30px;
-    }
-}
-
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 480px) {
     .mainHeader {
-        justify-content: space-around;
+        padding: 10px;
+        text-align: center;
     }
 
     .mainNav {
-        display: block;
+        display: none;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .iconNav {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .seconnd-Nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 10px;
     }
 
     .img-Container {
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
 
     .img-1,
@@ -647,10 +668,138 @@ a:hover:after {
     .img-6,
     .img-7,
     .img-8 {
-        width: 200px;
+        width: 90%;
     }
 
-    .carousel-content {
-        margin: 100px 0 50px;
+    .watch-list> {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainProductContainer {
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+
+    .product-container {
+        width: 100%;
+        display: block;
+    }
+
+    .headphone-add {
+        display: none;
+
+    }
+
+    .watch-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .web-details {
+        margin: auto;
+    }
+
+    .world-wide-ship>p,
+    .best-quality>p,
+    .secure-payment>p,
+    .best-offer>p {
+        display: none;
+    }
+    .customer-review{
+        margin-bottom: -5%;
+    }
+
+    .carousel {
+        height: 200px;
+        display: none;
+    }
+
+    .carousel-content img {
+        height: 200px;
+    }
+
+    .customer-review-container {
+        display: grid;
+        grid-template-rows: ;
+    }
+
+    .container-one {
+        width: 350px;
+        height: 340px;
+    }
+
+    .container-two {
+        width: 350px;
+        height: 320px;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .footer-container {
+        display: grid;
+    }
+
+    .Quick-link-container {
+        text-align: center;
+        margin-top: -15px;
+        margin: auto;
+    }
+
+    .register-container {
+        text-align: center;
+        
+    }
+     .input-details>input,
+    .input-two>input {
+        width: 90%;
+         margin-left: 23px;
+    }
+    .second-footer{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: aliceblue;
+
+    }
+    .brand-details{
+        display:grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+    .payment-card{
+        margin-left: 40px;
+        border-bottom: 1px black solid;
+    }
+    .personal-details{
+        margin-top: 10px;
+        width:460px;
+    }
+    .social-media {
+        font-size: 24px;
+        gap: 10px;
+    }
+
+    .quick-links {
+        margin-left: 0;
+        align-items: center;
+    }
+    .copyRights{
+        background-color: aliceblue;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .menu-btn-container{
+        display: none;
     }
 }
