@@ -12,6 +12,7 @@
 }
 
 .mainHeader {
+    position: sticky;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     align-items: center;
@@ -96,11 +97,18 @@ a:hover:after {
     padding: 2px 5px;
     border: 2px solid;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .login-btn>p {
     margin-bottom: 1px;
     margin-left: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login-btn:hover {
+    color: white;
+    background-color: black;
 }
 
 .add-cart-icon {
@@ -709,7 +717,8 @@ a:hover:after {
     .best-offer>p {
         display: none;
     }
-    .customer-review{
+
+    .customer-review {
         margin-bottom: -5%;
     }
 
@@ -720,6 +729,10 @@ a:hover:after {
 
     .carousel-content img {
         height: 200px;
+    }
+    .web-details{
+        margin-left: 10px;
+        margin-right: 50px;
     }
 
     .customer-review-container {
@@ -747,59 +760,72 @@ a:hover:after {
 
     .Quick-link-container {
         text-align: center;
-        margin-top: -15px;
-        margin: auto;
+    }
+    .Quick-link-container-two{
+        text-align: center;
+        margin-top: -10%;
     }
 
     .register-container {
         text-align: center;
-        
-    }
-     .input-details>input,
-    .input-two>input {
-        width: 90%;
-         margin-left: 23px;
-    }
-    .second-footer{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: aliceblue;
+         margin-top: -10%;
 
     }
-    .brand-details{
-        display:grid;
+
+    .input-details>input,
+    .input-two>input {
+        width: 90%;
+        margin-left: 23px;
+    }
+
+    .second-footer {
+        margin-top: 40px;
+        height: 400px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #3b5998;
+
+    }
+
+    .brand-details {
+        display: grid;
         justify-content: center;
         align-content: center;
 
     }
-    .payment-card{
+
+    .payment-card {
         margin-left: 40px;
         border-bottom: 1px black solid;
     }
-    .personal-details{
+
+    .personal-details {
         margin-top: 10px;
-        width:460px;
+        width: 100%;
+        background-color: #3b5998;
     }
+
     .social-media {
         font-size: 24px;
         gap: 10px;
+
     }
 
     .quick-links {
         margin-left: 0;
         align-items: center;
     }
-    .copyRights{
-        background-color: aliceblue;
+
+    .copyRights {
+        background-color: #3b5998;
         width: 100%;
         margin: auto;
         text-align: center;
     }
 }
 
-@media screen and (min-width: 1280px){
-    .menu-btn-container{
+@media screen and (min-width: 1280px) {
+    .menu-btn-container {
         display: none;
     }
 }
