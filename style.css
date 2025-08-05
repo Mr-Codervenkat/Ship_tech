@@ -693,6 +693,7 @@ a:hover:after {
     .product-container {
         width: 100%;
         display: block;
+        margin: 5%;
     }
 
     .headphone-add {
@@ -806,8 +807,6 @@ a:hover:after {
     .personal-details {
         margin-top: 40px;
         width: 100%;
-
-        /* background-color: #20263e; */
     }
 
     .social-media {
