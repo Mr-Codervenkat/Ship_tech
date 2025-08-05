@@ -730,7 +730,8 @@ a:hover:after {
     .carousel-content img {
         height: 200px;
     }
-    .web-details{
+
+    .web-details {
         margin-left: 10px;
         margin-right: 50px;
     }
@@ -761,14 +762,15 @@ a:hover:after {
     .Quick-link-container {
         text-align: center;
     }
-    .Quick-link-container-two{
+
+    .Quick-link-container-two {
         text-align: center;
         margin-top: -10%;
     }
 
     .register-container {
         text-align: center;
-         margin-top: -10%;
+        margin-top: -10%;
 
     }
 
@@ -783,7 +785,7 @@ a:hover:after {
         height: 400px;
         display: flex;
         flex-direction: column-reverse;
-        background-color: #3b5998;
+        /* background-color: #20263e; */
 
     }
 
@@ -791,18 +793,21 @@ a:hover:after {
         display: grid;
         justify-content: center;
         align-content: center;
+        padding-top: 30px;
 
     }
 
     .payment-card {
         margin-left: 40px;
         border-bottom: 1px black solid;
+        margin-top: -30px;
     }
 
     .personal-details {
-        margin-top: 10px;
+        margin-top: 40px;
         width: 100%;
-        background-color: #3b5998;
+
+        /* background-color: #20263e; */
     }
 
     .social-media {
@@ -817,10 +822,11 @@ a:hover:after {
     }
 
     .copyRights {
-        background-color: #3b5998;
+        /* background-color: #20263e; */
         width: 100%;
         margin: auto;
         text-align: center;
+        margin-top: 20px;
     }
 }
 
